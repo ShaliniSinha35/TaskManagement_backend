@@ -4,15 +4,15 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const taskRoutes = require('./routes/taskRoutes');
 
-// Load environment variables
+
 dotenv.config();
 
 // Initialize app
 const app = express();
 
 // Middleware
-app.use(express.json()); // Body parser
-app.use(cors()); // Enable CORS for cross-origin requests
+app.use(express.json()); 
+app.use(cors()); 
 
 // Connect to DB
 connectDB();
