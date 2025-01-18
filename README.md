@@ -13,3 +13,22 @@ This is the backend part of the Task Management application. It provides RESTful
 - **UUID**: Package for generating unique IDs for tasks.
 
 
+##API Endpoints
+
+
+POST /tasks: Create a new task
+Example: POST https://taskmanagement-backend-1.onrender.com/api/tasks
+
+GET /tasks: Get all tasks with filters (category, status)
+Example: GET https://taskmanagement-backend-1.onrender.com/api/tasks?category=Work&status=incomplete
+
+GET /alltasks: Get all tasks without any filter
+Example: GET https://taskmanagement-backend-1.onrender.com/api/alltasks
+
+PUT /tasks/:id: Update a task by ID
+Example: PUT https://taskmanagement-backend-1.onrender.com/api/tasks/:id
+
+DELETE /tasks/:id: Delete a task by ID
+Example: DELETE https://taskmanagement-backend-1.onrender.com/api/tasks/:id
+
+
